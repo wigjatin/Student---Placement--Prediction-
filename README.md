@@ -1,1 +1,40 @@
-# 🎓 Placement Prediction System This project is a Machine Learning-based **Placement Prediction System** designed to predict whether a student is likely to get placed based on their academic performance and background. It uses a **Logistic Regression** model trained on real campus placement data. ## 🔍 Overview The dataset includes features like: - Gender - Senior School and High School percentages and boards - High School stream (Science, Commerce, Arts) - Degree percentage and type - Work experience - Employability test percentage - MBA specialisation and percentage The output is a binary classification: - **1** → Placed - **0** → Not Placed ## ⚙️ How It Works 1. **Data Preprocessing**: - Categorical values were encoded using mapping dictionaries. - Irrelevant columns (`sl_no`, `salary`) were dropped. - Missing values were checked (none found). 2. **Model Used**: - **Logistic Regression** from `sklearn.linear_model` - Model trained on the full dataset (`X` and `y`) - Saved using `joblib` for deployment 3. **Example Prediction**: A single data point can be passed to the model like so: ```python new_data = pd.DataFrame({ 'gender': 0, 'ssc_p': 67.0, 'ssc_b': 0, 'hsc_p': 91.0, 'hsc_b': 0, 'hsc_s': 1, 'degree_p': 60.0, 'degree_t': 2, 'workex': 1, 'etest_p': 55.0, 'specialisation': 1, 'mba_p': 58.8, }, index=[0]) prediction = model.predict(new_data) probability = model.predict_proba(new_data)[0][1]
+# 🎓 Placement Prediction App
+
+A professional web application that predicts student placement outcomes using a **Logistic Regression** machine learning model, trained on academic and background data.
+
+## 🚀 Features
+
+- Predicts whether a student is likely to be placed.
+- Shows placement probability with a clean visual interface.
+- Built using Streamlit for seamless web deployment.
+
+## 🧠 Machine Learning Model
+
+- **Model Used**: Logistic Regression
+- **Training Data**: Historical placement data with features like exam scores, work experience, and degree specialization.
+- **Libraries**: scikit-learn, pandas, joblib
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- scikit-learn
+- pandas
+- joblib
+
+## 📊 Input Parameters
+
+- Gender
+- Senior School Board & Percentage (SSC)
+- High School Stream, Board & Percentage (HSC)
+- Degree Type & Percentage
+- Work Experience
+- E-test Score
+- MBA Specialisation & Percentage
+
+## 💻 Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/placement-prediction-app.git
+   cd placement-prediction-app
