@@ -32,4 +32,7 @@ A professional web application that predicts student placement outcomes using a 
 - E-test Score
 - MBA Specialisation & Percentage
 
+## Demo
+You can access the live demo of the application by visiting the following link:
+[View Demo on Streamlit Cloud](https://student-placement-prediction-jatin-wig.streamlit.app/)
 
