@@ -1,20 +1,20 @@
-# 🎓 Placement Prediction App
+# Placement Prediction App
 
 A professional web application that predicts student placement outcomes using a **Logistic Regression** machine learning model, trained on academic and background data.
 
-## 🚀 Features
+## Features
 
 - Predicts whether a student is likely to be placed.
 - Shows placement probability with a clean visual interface.
 - Built using Streamlit for seamless web deployment.
 
-## 🧠 Machine Learning Model
+## Machine Learning Model
 
 - **Model Used**: Logistic Regression
 - **Training Data**: Historical placement data with features like exam scores, work experience, and degree specialization.
 - **Libraries**: scikit-learn, pandas, joblib
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - Streamlit
@@ -22,7 +22,7 @@ A professional web application that predicts student placement outcomes using a 
 - pandas
 - joblib
 
-## 📊 Input Parameters
+## Input Parameters
 
 - Gender
 - Senior School Board & Percentage (SSC)
@@ -32,9 +32,4 @@ A professional web application that predicts student placement outcomes using a 
 - E-test Score
 - MBA Specialisation & Percentage
 
-## 💻 Setup Instructions
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/placement-prediction-app.git
-   cd placement-prediction-app
